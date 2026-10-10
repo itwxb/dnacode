@@ -1,8 +1,14 @@
 name: Release
 
+# 触发方式：
+#   1) 推送 v* 标签（正式版本流程）
+#   2) 向 release 分支推送任意提交（用于重跑发布构建，自动使用 package.json 版本号）
+#   3) 手动 workflow_dispatch（可选指定 tag）
+# 所有触发方式都只会创建/更新“草稿 Release”，正式发布必须在 GitHub 上人工确认。
 on:
   push:
     tags: ["v*"]
+    branches: ["release"]
   workflow_dispatch:
     inputs:
       tag:
@@ -79,7 +85,7 @@ jobs:
         id: rel
         shell: bash
         run: |
-          if [ "${{ github.event_name }}" = "push" ]; then
+          if [[ "${{ github.ref }}" == refs/tags/* ]]; then
             echo "tag=${{ github.ref_name }}" >> "$GITHUB_OUTPUT"
           elif [ -n "${{ inputs.tag }}" ]; then
             echo "tag=${{ inputs.tag }}" >> "$GITHUB_OUTPUT"
