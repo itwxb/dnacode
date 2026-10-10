@@ -186,6 +186,7 @@ Git 的原始错误输出会保留在错误提示的“详情”中，便于排�
 - Rust 后端不经过 shell 执行任何命令；不暴露任意命令执行能力；文件访问限制在当前项目根目录内并禁止进入 `.git` 内部目录。
 - Tauri capabilities 保持最小权限（核心能力 + 打开文件夹对话框）。
 - 生产构建启用 CSP（`default-src 'self'`，不加载任何外部脚本/样式）。
+- 安全漏洞请通过 [SECURITY.md](SECURITY.md) 描述的私密通道报告，不要在公开 Issue 中披露细节。
 
 ---
 
@@ -246,6 +247,8 @@ Git 的原始错误输出会保留在错误提示的“详情”中，便于排�
 ---
 
 ## 贡献方式
+
+完整流程与代码约定请阅读 [CONTRIBUTING.md](CONTRIBUTING.md)；参与项目即表示同意遵守 [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)。
 
 1. Fork 本仓库并创建分支。
 2. 提交前请运行：`pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm build`，以及 `cd src-tauri && cargo fmt --all -- --check && cargo clippy --all-targets -- -D warnings && cargo test`。

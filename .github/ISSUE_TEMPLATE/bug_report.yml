@@ -1,0 +1,60 @@
+name: Bug 报告
+description: 报告一个缺陷或异常行为
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈！请尽量填写完整信息以便快速定位。
+        涉及安全漏洞请不要在此公开，改用 SECURITY.md 中的私密报告通道。
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 问题描述
+      description: 发生了什么？你预期发生什么？
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 打开项目 …
+        2. 点击 …
+        3. 出现 …
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: DNACode 版本
+      description: 安装包文件名，或应用内「设置 → 关于」中的版本号
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: 操作系统
+      placeholder: Windows 10 22H2 x64 / Windows 11 23H2 / macOS 15 …
+    validations:
+      required: true
+  - type: input
+    id: git-version
+    attributes:
+      label: Git 版本（git --version）
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: 错误信息 / 日志 / 截图
+      description: 应用内错误提示的「详情」、终端输出或截图
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已搜索过现有 Issue，未发现相同问题
+          required: true
