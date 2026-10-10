@@ -113,7 +113,9 @@ pnpm install
 ```bash
 pnpm install          # 安装前端依赖
 pnpm tauri dev        # 本地开发（启动 Tauri 窗口 + Vite）
-pnpm tauri build      # 生产构建（含 Windows NSIS 安装包）
+pnpm tauri build      # 生产构建（Windows 下默认产出 NSIS 安装包）
+pnpm tauri build --bundles dmg           # macOS：产出 .dmg
+pnpm tauri build --bundles deb,appimage  # Linux：产出 .deb / .AppImage
 
 pnpm format:check     # Prettier 格式检查
 pnpm lint             # ESLint
