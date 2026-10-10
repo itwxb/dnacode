@@ -52,6 +52,15 @@ pub async fn run<S: AsRef<OsStr>>(
         .env("GIT_TERMINAL_PROMPT", "0")
         .env("GIT_OPTIONAL_LOCKS", "0");
 
+    // Windows 上 GUI 程序（无控制台）启动控制台子进程时，系统默认会新建一个
+    // 控制台窗口，导致每次 Git 操作都闪现 cmd 黑框。CREATE_NO_WINDOW 让 git
+    // 在无窗口模式下静默运行。
+    #[cfg(windows)]
+    {
+        const CREATE_NO_WINDOW: u32 = 0x0800_0000;
+        cmd.creation_flags(CREATE_NO_WINDOW);
+    }
+
     let child = cmd.spawn().map_err(|e| {
         if e.kind() == std::io::ErrorKind::NotFound {
             AppError::new(
