@@ -1,0 +1,17 @@
+# 统一行尾：仓库内文本文件一律使用 LF（Windows 克隆也不例外），
+# 避免 Prettier / cargo fmt 因行尾转换产生无关差异。
+* text=auto eol=lf
+
+# 二进制资源不做行尾处理
+*.png binary
+*.ico binary
+*.icns binary
+*.icns binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.zip binary
+*.exe binary
+*.dll binary
+*.pdf binary
