@@ -15,14 +15,29 @@ DNACode 是一个专注于「查看代码 → 编辑 → 审查 Git 变更 → A
 
 ---
 
-## 界面截图
+## Preview
 
-> 截图占位说明：本仓库暂未附截图（不提供伪造图片）。界面布局如下，可自行运行 `pnpm tauri dev` 查看：
->
-> - 顶部工具栏（约 44px）：DNACode 图标与名称、打开项目、当前项目名、当前分支（含 ↑领先/↓落后）、刷新 Git 状态、主题切换、设置。
-> - 左侧文件树（默认约 220px，可拖拽调宽）：文件夹展开/折叠、文件类型图标、隐藏文件暗色显示。
-> - 中间编辑区：多文件标签页、未保存圆点标记、行号、语法高亮、查找替换；Git 变更文件以标签页形式查看 Diff。
-> - 右侧 Git 面板（默认约 340px，可拖拽调宽）：已暂存 / 未暂存 / 未跟踪 / 冲突分区、提交信息输入框与 AI 总结按钮、Commit、Push、提交历史。
+<p align="center">
+  <img
+    src="assets/screenshots/dnacode-main.png"
+    alt="DNACode main interface showing the file tree, code editor, and persistent Git panel"
+    width="100%"
+  >
+</p>
+
+<p align="center">
+  A minimal code editor with a persistent Git panel.
+</p>
+
+### Demo
+
+<p align="center">
+  <img
+    src="assets/screenshots/dnacode-demo.gif"
+    alt="DNACode demo showing code editing and Git review"
+    width="100%"
+  >
+</p>
 
 ---
 
