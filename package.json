@@ -15,7 +15,8 @@
     "format:check": "prettier --check .",
     "test": "vitest run",
     "test:watch": "vitest",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "icons": "tauri icon \"assets/brand/DNACode-icon-1024.png\" -o src-tauri/icons && node scripts/compose-icons.mjs"
   },
   "dependencies": {
     "@codemirror/autocomplete": "^6.20.3",

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="title desc">
+  <title id="title">DNACode small-size icon</title>
+  <desc id="desc">Optically simplified DNA mark for 16 to 32 pixel display sizes.</desc>
+  <rect x="0.5" y="0.5" width="23" height="23" rx="5.2" fill="#151B26" stroke="#2B3547" stroke-width="0.5"/>
+  <path d="M16.8 4.4 C16.8 8.5 7.2 15.5 7.2 19.6"
+        fill="none" stroke="#315FA8" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7.2 4.4 C7.2 8.5 16.8 15.5 16.8 19.6"
+        fill="none" stroke="#4C8DFF" stroke-width="3.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- At tiny sizes the rungs sit on top of both strands so the ladder remains legible. -->
+  <path d="M8.75 8 H15.25 M8.75 16 H15.25"
+        fill="none" stroke="#8DB7FF" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

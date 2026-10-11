@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">DNACode light-background icon</title>
+  <desc id="desc">The DNACode DNA symbol adapted for light surfaces.</desc>
+  <rect x="1" y="1" width="1022" height="1022" rx="180" fill="#F4F7FC" stroke="#D8E1EF" stroke-width="2"/>
+  <path d="M704 188 C704 404 320 620 320 836" fill="none" stroke="#9AB9EB" stroke-width="68" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M370.5 344 H653.5 M370.5 680 H653.5" fill="none" stroke="#2563EB" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M320 188 C320 404 704 620 704 836" fill="none" stroke="#2563EB" stroke-width="68" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

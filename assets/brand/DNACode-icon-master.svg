@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">DNACode app icon</title>
+  <desc id="desc">A refined blue DNA double helix on a dark rounded-square background.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B2230"/>
+      <stop offset="1" stop-color="#10151E"/>
+    </linearGradient>
+  </defs>
+  <!-- The dark tile remains part of the icon; outer corners are transparent. -->
+  <rect x="1" y="1" width="1022" height="1022" rx="180" fill="url(#background)" stroke="#2B3547" stroke-width="2"/>
+  <!-- Rear strand uses a solid secondary blue rather than alpha transparency. -->
+  <path d="M704 188 C704 404 320 620 320 836"
+        fill="none" stroke="#315FA8" stroke-width="68" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Base-pair rungs meet the strand centerlines; the foreground strand masks the near ends. -->
+  <path d="M370.5 344 H653.5 M370.5 680 H653.5"
+        fill="none" stroke="#4C8DFF" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Front strand is intentionally drawn last to create a consistent over-under weave. -->
+  <path d="M320 188 C320 404 704 620 704 836"
+        fill="none" stroke="#4C8DFF" stroke-width="68" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

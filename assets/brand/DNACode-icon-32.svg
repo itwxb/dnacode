@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" role="img" aria-labelledby="title desc">
+  <title id="title">DNACode 32-pixel icon</title>
+  <desc id="desc">Pixel-size-tuned DNA app mark for 32 pixel display.</desc>
+  <rect x="0.5" y="0.5" width="31" height="31" rx="5.7" fill="#151B26" stroke="#2B3547" stroke-width="0.6"/>
+  <path d="M22.4 5.87 C22.4 11.33 9.6 20.67 9.6 26.13" fill="none" stroke="#315FA8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M9.6 5.87 C9.6 11.33 22.4 20.67 22.4 26.13" fill="none" stroke="#4C8DFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Rungs overlay both strands at 32px to favour immediate readability over weave detail. -->
+  <path d="M11.67 10.67 H20.33 M11.67 21.33 H20.33" fill="none" stroke="#8DB7FF" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

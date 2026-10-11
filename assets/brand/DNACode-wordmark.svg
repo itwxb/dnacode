@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="180" viewBox="0 0 760 180" role="img" aria-labelledby="title desc">
+  <title id="title">DNACode wordmark</title>
+  <desc id="desc">DNACode wordmark paired with the refined app icon.</desc>
+  <defs><linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B2230"/><stop offset="1" stop-color="#10151E"/></linearGradient></defs>
+  <g transform="translate(0,0) scale(0.17578125)">
+    <rect x="1" y="1" width="1022" height="1022" rx="180" fill="url(#background)" stroke="#2B3547" stroke-width="2"/>
+    <path d="M704 188 C704 404 320 620 320 836" fill="none" stroke="#315FA8" stroke-width="68" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M370.5 344 H653.5 M370.5 680 H653.5" fill="none" stroke="#4C8DFF" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M320 188 C320 404 704 620 704 836" fill="none" stroke="#4C8DFF" stroke-width="68" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="218" y="111" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="72" font-weight="650" letter-spacing="-2" fill="#E6E9F0">DNACode</text>
+</svg>
