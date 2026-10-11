@@ -14,10 +14,14 @@
  * 默认字体：./node_modules/@expo-google-fonts/inter/600SemiBold/Inter_600SemiBold.ttf
  * 许可说明：Inter 为 SIL OFL 开源字体，转曲结果可随 MIT 项目自由分发。
  */
-import opentype from "opentype.js";
 import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
-import { resolve, dirname } from "node:path";
+import { resolve, dirname, join } from "node:path";
+import { createRequire } from "node:module";
+
+// 依赖从「运行目录」解析（先把 opentype.js / @expo-google-fonts/inter 安装到当前目录）
+const require = createRequire(join(process.cwd(), "package.json"));
+const opentype = require("opentype.js");
 
 const here = dirname(fileURLToPath(import.meta.url));
 const outDir = resolve(here, "..", "assets", "brand");
