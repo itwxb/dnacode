@@ -29,7 +29,9 @@ const fontPath =
   process.argv[2] ?? "./node_modules/@expo-google-fonts/inter/600SemiBold/Inter_600SemiBold.ttf";
 
 const fontBuf = readFileSync(fontPath);
-const font = opentype.parse(fontBuf.buffer.slice(fontBuf.byteOffset, fontBuf.byteOffset + fontBuf.byteLength));
+const font = opentype.parse(
+  fontBuf.buffer.slice(fontBuf.byteOffset, fontBuf.byteOffset + fontBuf.byteLength),
+);
 
 // ---- 1. “DNACode” 文字转曲（size 72，字距 -2，与原字标一致）----
 const text = "DNACode";
@@ -53,7 +55,12 @@ console.log(`path data 长度: ${textPathData.length} 字符`);
 
 // ---- 2. 图标组（母版几何，深/浅两套颜色）----
 const ICON_SCALE = 0.17578125;
-const iconGroup = (tileFill, tileStroke, rear, front) => `  <g transform="translate(0,0) scale(${ICON_SCALE})">
+const iconGroup = (
+  tileFill,
+  tileStroke,
+  rear,
+  front,
+) => `  <g transform="translate(0,0) scale(${ICON_SCALE})">
     <rect x="1" y="1" width="1022" height="1022" rx="180" fill="${tileFill}" stroke="${tileStroke}" stroke-width="2"/>
     <path d="M704 188 C704 404 320 620 320 836" fill="none" stroke="${rear}" stroke-width="68" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M370.5 344 H653.5 M370.5 680 H653.5" fill="none" stroke="${front}" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
