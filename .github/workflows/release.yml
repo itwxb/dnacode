@@ -108,7 +108,7 @@ jobs:
       # 避免把 tauri.conf.json 里的 Windows 默认目标带到其他平台。
       # 产物上传到草稿 Release，正式发布需在 GitHub 上人工确认。
       - name: Build and upload to draft release
-        uses: tauri-apps/tauri-action@v0
+        uses: tauri-apps/tauri-action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
