@@ -1,4 +1,7 @@
 {
+  "redirects": [
+    { "source": "$wwwhost", "destination": "$host", "statusCode": 301 }
+  ],
   "headers": [
     {
       "source": "/*",
