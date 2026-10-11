@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DNACode 图标 v2 — 验收预览</title>
+<style>
+  :root { --bg: #0f1218; --panel: #171c26; --line: #2a3140; --text: #e6e9f0; --dim: #9aa4b5; --accent: #4c8dff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.75 "Microsoft YaHei", "Segoe UI", system-ui, sans-serif; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 40px 28px 90px; }
+  h1 { font-size: 24px; margin: 0 0 6px; }
+  .sub { color: var(--dim); margin-bottom: 30px; }
+  h2 { font-size: 18px; margin: 46px 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+  img { display: block; }
+  .hero { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
+  .hero > img { width: 210px; height: 210px; border-radius: 26px; box-shadow: 0 0 0 1px var(--line), 0 18px 44px rgba(0, 0, 0, .45); }
+  .hero .txt { flex: 1 1 320px; }
+  .ladder { display: flex; align-items: flex-end; gap: 26px; flex-wrap: wrap; margin-top: 14px; }
+  .ladder .item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .ladder .item small { color: var(--dim); font-size: 12px; }
+  .row3 { display: flex; gap: 18px; flex-wrap: wrap; }
+  .row3 > div { flex: 1 1 270px; }
+  .cap { color: var(--dim); font-size: 13px; margin-top: 10px; }
+  .bandL { background: #0d1117; border-radius: 12px; padding: 22px 26px; }
+  .bandW { background: #f3f4f6; border-radius: 12px; padding: 22px 26px; }
+  .bandW img, .bandL img.wm { width: min(560px, 100%); }
+  .chipDark { background: #15171c; border-radius: 80px; padding: 16px; width: max-content; margin: 0 auto; }
+  .chipDark img { width: 96px; height: 96px; }
+  .center { display: flex; justify-content: center; align-items: center; }
+  img.full { width: 100%; border-radius: 12px; border: 1px solid var(--line); margin-top: 4px; }
+  code { font-family: Consolas, monospace; font-size: 13px; background: #1d2430; border: 1px solid var(--line); border-radius: 5px; padding: 1px 6px; }
+  .note { border-left: 3px solid var(--accent); background: var(--panel); border-radius: 0 12px 12px 0; padding: 14px 18px; color: var(--dim); margin: 18px 0; }
+  b { color: #fff; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>DNACode 图标 v2 — 验收预览</h1>
+  <div class="sub">本地预览单页（图片为仓库内文件直接引用）。建议顺序：① 应用图标 → ② 变体 → ③ 新字标 → ④ 应用内小标 → ⑤ 真机打包证据。</div>
+
+  <h2>① 应用图标（深色主版）</h2>
+  <div class="panel">
+    <div class="hero">
+      <img src="../DNACode-icon-1024.png" alt="DNACode 主图标（1024）">
+      <div class="txt">
+        <p><b>母版</b> <code>DNACode-icon-1024.png</code>（1024×1024）。已集成进应用：Windows exe / 安装包、macOS icns、Linux png。</p>
+        <p class="cap">下面是实际打包的小尺寸帧（16–256，均为对应尺寸的真实文件）：</p>
+      </div>
+    </div>
+    <div class="ladder">
+      <div class="item"><img src="../DNACode-icon-16.png" width="16" height="16" alt="16"><small>16</small></div>
+      <div class="item"><img src="../DNACode-icon-24.png" width="24" height="24" alt="24"><small>24</small></div>
+      <div class="item"><img src="../DNACode-icon-32.png" width="32" height="32" alt="32"><small>32</small></div>
+      <div class="item"><img src="../DNACode-icon-48.png" width="48" height="48" alt="48"><small>48</small></div>
+      <div class="item"><img src="../DNACode-icon-64.png" width="64" height="64" alt="64"><small>64</small></div>
+      <div class="item"><img src="../DNACode-icon-128.png" width="128" height="128" alt="128"><small>128</small></div>
+      <div class="item"><img src="../DNACode-icon-256.png" width="160" height="160" alt="256"><small>256（缩略显示）</small></div>
+    </div>
+  </div>
+
+  <h2>② 变体</h2>
+  <div class="row3">
+    <div>
+      <div class="bandW center" style="height: 180px"><img src="../DNACode-icon-light.png" style="width: 140px; height: 140px" alt="浅色变体"></div>
+      <div class="cap"><code>DNACode-icon-light.png</code> — 浅色背景变体</div>
+    </div>
+    <div>
+      <div class="bandL center" style="height: 180px"><img src="../DNACode-icon-monochrome.png" style="width: 140px; height: 140px" alt="单色变体"></div>
+      <div class="cap"><code>DNACode-icon-monochrome.png</code> — 单色变体（白标 + 深底）</div>
+    </div>
+    <div>
+      <div class="bandL center" style="height: 180px"><div class="chipDark"><img src="../DNACode-icon-monochrome-transparent.svg" alt="透明底单色"></div></div>
+      <div class="cap"><code>DNACode-icon-monochrome-transparent.svg</code> — 透明底单色（<b>新增</b>，印刷 / 水印用）</div>
+    </div>
+  </div>
+
+  <h2>③ 字标（新增：转曲 + 浅色版）</h2>
+  <div class="bandL">
+    <img class="wm" src="../DNACode-wordmark-outlined.svg" alt="深色字标">
+  </div>
+  <div class="cap"><code>DNACode-wordmark-outlined.svg</code> — 深色背景用；文字已转曲（Inter SemiBold），任何设备字形一致</div>
+  <div class="bandW">
+    <img class="wm" src="../DNACode-wordmark-light.svg" alt="浅色字标">
+  </div>
+  <div class="cap"><code>DNACode-wordmark-light.svg</code> — 浅色背景用（深色文字）；原版活字字标 <code>DNACode-wordmark.svg</code> 未改动，便于将来编辑</div>
+
+  <h2>④ 应用内小标（界面里实际使用的版本）</h2>
+  <img class="full" src="in-app-marks-preview.png" alt="应用内小标">
+  <div class="cap">上：深色主题；下：浅色主题（实际尺寸 + 放大对照）</div>
+
+  <h2>⑤ 真机打包证据（真实构建产物提取）</h2>
+  <div class="row3">
+    <div>
+      <img class="full" src="final-exe-vs-source.png" alt="exe 提取 vs 设计源">
+      <div class="cap">从真实构建的 <code>dnacode.exe</code> / 安装包中提取的小尺寸（左）vs 设计源（右）</div>
+    </div>
+    <div>
+      <img class="full" src="compare-old-vs-refined.png" alt="新旧对比">
+      <div class="cap">旧版（上）vs 精修版（中、下），×10 放大</div>
+    </div>
+  </div>
+
+  <h2>⑥ 你也可以真机自测（可选）</h2>
+  <div class="note">
+    <b>直接运行</b>（看任务栏图标）：<br>
+    <code>dnacode\src-tauri\target\release\dnacode.exe</code><br><br>
+    <b>或安装新版安装包</b>（看 开始菜单 / 任务栏 / 卸载面板 图标）：<br>
+    <code>dnacode\src-tauri\target\release\bundle\nsis\DNACode_0.1.0_x64-setup.exe</code><br><br>
+    文字版复审结论见：<code>assets\brand\review\refined-icon-design-review.md</code>
+  </div>
+
+</div>
+</body>
+</html>
