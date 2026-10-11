@@ -1,4 +1,9 @@
-# DNACode
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/brand/DNACode-wordmark-outlined.svg">
+    <img src="assets/brand/DNACode-wordmark-light.svg" alt="DNACode" width="420">
+  </picture>
+</p>
 
 **Minimal Code Editor** · Less IDE. More Flow.
 
