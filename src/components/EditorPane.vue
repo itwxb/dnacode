@@ -347,23 +347,31 @@ function tabTooltip(tab: EditorTab): string {
         <svg
           width="36"
           height="36"
-          viewBox="0 0 24 24"
+          viewBox="0 0 1024 1024"
           fill="none"
           aria-hidden="true"
           opacity="0.5"
         >
           <path
-            d="M8 2c0 5 8 5 8 10s-8 5-8 10"
+            d="M704 188C704 404 320 620 320 836"
             stroke="var(--text-3)"
-            stroke-width="1.6"
+            stroke-width="68"
             stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
-            d="M16 2c0 5-8 5-8 10s8 5 8 10"
+            d="M370.5 344H653.5M370.5 680H653.5"
             stroke="var(--text-3)"
-            stroke-width="1.6"
+            stroke-width="42"
             stroke-linecap="round"
-            opacity="0.5"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M320 188C320 404 704 620 704 836"
+            stroke="var(--text-3)"
+            stroke-width="68"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
         </svg>
         <div>从左侧文件树选择文件开始查看和编辑</div>

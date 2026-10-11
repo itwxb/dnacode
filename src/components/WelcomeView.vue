@@ -14,25 +14,27 @@ async function pickProject(): Promise<void> {
   <div class="welcome">
     <div class="welcome-inner">
       <div class="welcome-brand">
-        <svg width="46" height="46" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <svg width="46" height="46" viewBox="0 0 1024 1024" fill="none" aria-hidden="true">
           <path
-            d="M8 2c0 5 8 5 8 10s-8 5-8 10"
-            stroke="var(--accent)"
-            stroke-width="1.6"
+            d="M704 188C704 404 320 620 320 836"
+            stroke="var(--brand-rear)"
+            stroke-width="68"
             stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
-            d="M16 2c0 5-8 5-8 10s8 5 8 10"
+            d="M370.5 344H653.5M370.5 680H653.5"
             stroke="var(--accent)"
-            stroke-width="1.6"
+            stroke-width="42"
             stroke-linecap="round"
-            opacity="0.5"
+            stroke-linejoin="round"
           />
           <path
-            d="M9.4 7h5.2M9.4 17h5.2"
+            d="M320 188C320 404 704 620 704 836"
             stroke="var(--accent)"
-            stroke-width="1.4"
+            stroke-width="68"
             stroke-linecap="round"
+            stroke-linejoin="round"
           />
         </svg>
         <div>
