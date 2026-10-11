@@ -1,6 +1,6 @@
 [package]
 name = "dnacode"
-version = "0.1.0"
+version = "0.1.1"
 description = "DNACode — Minimal code editor with AI-assisted Git commits"
 authors = ["DNACode contributors"]
 edition = "2021"

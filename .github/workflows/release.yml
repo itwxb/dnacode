@@ -93,6 +93,17 @@ jobs:
             echo "tag=v$(node -p "require('./package.json').version")" >> "$GITHUB_OUTPUT"
           fi
 
+      # 从 CHANGELOG.md 提取对应版本的内容，直接作为 Release 说明展示
+      - name: Build release notes from CHANGELOG.md
+        id: notes
+        shell: bash
+        run: |
+          {
+            echo "text<<__NOTES_EOF__"
+            node scripts/changelog-section.mjs "${{ steps.rel.outputs.tag }}"
+            echo "__NOTES_EOF__"
+          } >> "$GITHUB_OUTPUT"
+
       # 每个平台只打包自己支持的安装器（nsis / dmg / deb+appimage），
       # 避免把 tauri.conf.json 里的 Windows 默认目标带到其他平台。
       # 产物上传到草稿 Release，正式发布需在 GitHub 上人工确认。
@@ -103,7 +114,7 @@ jobs:
         with:
           tagName: ${{ steps.rel.outputs.tag }}
           releaseName: "DNACode ${{ steps.rel.outputs.tag }}"
-          releaseBody: "详细变更见仓库中的 CHANGELOG.md。"
+          releaseBody: ${{ steps.notes.outputs.text }}
           releaseDraft: true
           prerelease: false
           args: --target ${{ matrix.target }} --bundles ${{ matrix.bundles }}

@@ -16,7 +16,7 @@ DNACode 是一个专注于「查看代码 → 编辑 → 审查 Git 变更 → A
 - Git：直接调用你系统里安装的 Git CLI（沿用你的凭据、SSH 密钥与配置）
 - AI（可选）：OpenAI 兼容 Chat Completions API，仅在你主动点击时调用
 
-> 当前版本：**0.1.0**。功能与限制以本文档与实际代码为准。
+> 当前版本：**0.1.1**。功能与限制以本文档与实际代码为准。
 
 **下载 DNACode：** [前往 GitHub Releases 下载最新版本](https://github.com/itwxb/dnacode/releases/latest)
 
@@ -158,7 +158,7 @@ cargo test                   # Rust 单元测试 + 真实临时仓库集成测�
 1. 使用 `pnpm tauri build` 构建，产物位于：
 
    ```text
-   src-tauri/target/release/bundle/nsis/DNACode_0.1.0_x64-setup.exe
+   src-tauri/target/release/bundle/nsis/DNACode_0.1.1_x64-setup.exe
    ```
 
 2. 安装包为 NSIS 格式，默认按当前用户安装（无需管理员权限）。

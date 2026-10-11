@@ -1,7 +1,7 @@
 {
   "name": "dnacode",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DNACode — Minimal code editor with AI-assisted Git commits (Tauri 2 + Vue 3 + CodeMirror 6)",
   "license": "MIT",
   "type": "module",
