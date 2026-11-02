@@ -40,7 +40,7 @@ jobs:
             label: Linux x64
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Install Linux dependencies
         if: startsWith(matrix.os, 'ubuntu')
